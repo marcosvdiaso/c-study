@@ -1,9 +1,8 @@
 # C Study Projects
 
-<details open><summary>1) rectangleAreaCalculator</summary>
+1) rectangleAreaCalculator
   - Description: Calculate the area of a rectangle (width x height).
   - How it works: First, it declares the variables (3 ints = length, width, and area, and 1 char = choice). Then, it asks the user for the width and the height, with error messages if the user inputs an invalid digit. Next, it calculates the area and gives the result to the user. All operations are inside a do-while loop. At the end, the user has the choice of whether to continue or not.
-</details>
 2) arithmeticCalculator
   - Description: Simple arithmetic calculator, allowing users to perform basic mathematical operations such as addition, subtraction, multiplication, division, exponentiation, and rooting.
   - How it works: First, the program begins by declaring several variables: x, y, and calc to store input numbers and results, op as an integer to store the operation choice, and choice as a character to manage the user's choice to continue or exit the program. Then, the program enters a loop where it prompts the user to select an arithmetic operation by entering a number from 1 to 6. After the user selects an operation, the program prompts the user to input two numbers (x and y) required for the chosen operation. Following the input of numbers, the program performs the selected arithmetic operation using a switch statement. The result is displayed to the user, and they are prompted whether they want to continue or exit the program. The program continues looping as long as the user wishes to perform additional calculations. Once the user decides to exit by entering "n" or "N", the loop terminates, and the program ends.
