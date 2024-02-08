@@ -6,7 +6,7 @@
     }
 
 int main(){
-    int sw; // Variable declaration sw (sw is stopwatch shortcut)
+    int sw;
 
     printf("Stopwatch.\n\n");
     printf("How many seconds?\n");
@@ -19,4 +19,7 @@ int main(){
         Sleep(1000);
         sw--;
     }
+
+    printf("End.");
+    return 0;
 }
