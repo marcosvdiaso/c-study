@@ -24,37 +24,61 @@ int main(){
     switch(conv_opt){
         case 1:
             printf("\nHow much C?\n");
-            scanf("%f", &temp1);
+            if (scanf("%f", &temp1) != 1) {
+                    printf("Error: Invalid input. Please enter a valid number.\n");
+                    while (getchar() != '\n'); // Clear input buffer
+                    continue;
+            }
             temp2 = (temp1 * 9.0 / 5.0) + 32;
             printf("%.2f Celsius is equivalent to %.2f Fahrenheit.\n", temp1, temp2);
             break;
         case 2:
             printf("\nHow much C?\n");
-            scanf("%f", &temp1);
+            if (scanf("%f", &temp1) != 1) {
+                    printf("Error: Invalid input. Please enter a valid number.\n");
+                    while (getchar() != '\n'); // Clear input buffer
+                    continue;
+            }
             temp2 = temp1 + 273.15;
             printf("%.2f Celsius is equivalent to %.2f Kelvin.\n", temp1, temp2);
             break;
         case 3:
             printf("\nHow much F?\n");
-            scanf("%f", &temp1);
+            if (scanf("%f", &temp1) != 1) {
+                    printf("Error: Invalid input. Please enter a valid number.\n");
+                    while (getchar() != '\n'); // Clear input buffer
+                    continue;
+            }
             temp2 = (temp1 - 32) * 5 / 9;
             printf("%.2f Fahrenheit is equivalent to %.2f Celsius.\n", temp1, temp2);
             break;
         case 4:
             printf("\nHow much F?\n");
-            scanf("%f", &temp1);
+            if (scanf("%f", &temp1) != 1) {
+                    printf("Error: Invalid input. Please enter a valid number.\n");
+                    while (getchar() != '\n'); // Clear input buffer
+                    continue;
+            }
             temp2 = (temp1 - 32) * 5 / 9 + 273.15;
             printf("%.2f Fahrenheit is equivalent to %.2f Kelvin.\n", temp1, temp2);
             break;
         case 5:
             printf("\nHow much K?\n");
-            scanf("%f", &temp1);
+            if (scanf("%f", &temp1) != 1) {
+                    printf("Error: Invalid input. Please enter a valid number.\n");
+                    while (getchar() != '\n'); // Clear input buffer
+                    continue;
+            }
             temp2 = temp1 - 273.15;
             printf("%.2f Kelvin is equivalent to %.2f Celsius.\n", temp1, temp2);
             break;
         case 6:
             printf("\nHow much K?\n");
-            scanf("%f", &temp1);
+            if (scanf("%f", &temp1) != 1) {
+                    printf("Error: Invalid input. Please enter a valid number.\n");
+                    while (getchar() != '\n'); // Clear input buffer
+                    continue;
+            }
             temp2 = (temp1 - 273.15) * 1.8 + 32;
             printf("%.2f Kelvin is equivalent to %.2f Fahrenheit.\n", temp1, temp2);
             break;
